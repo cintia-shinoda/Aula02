@@ -4,15 +4,20 @@ public class DesvioSimples {
 
 	public static void main(String[] args) {
 		/*Uma ONG criou um jogo para alertar as pessoas sobre os riscos das drogas.
-		 *Por se tratar de um assunto sensível, ficou decidido que a idade mínima para jogar é de 12 anos.
-		 *Sua função é criar um programa que receba a idade do usuário e exiba a mensagem "Você pode jogar" caso ele tenha 12 anos ou mais. */
+		 *Por se tratar de um assunto sensÃ­vel, ficou decidido que a idade mÃ­nima para jogar Ã© de 12 anos.
+		 *Sua funÃ§Ã£o Ã© criar um programa que receba a idade do usuÃ¡rio e exiba a mensagem "VocÃª pode jogar" caso ele tenha 12 anos ou mais. */
 		
 		Scanner leitor = new Scanner(System.in);
 		int idade;
 		System.out.println("Por favor, digite a sua idade!");
 		idade = leitor.nextInt();
 		System.out.println("Deixe-me verificar sua idade...");
-		/*Aqui devemos criar uma solução para verificar a idade do usuário*/
+		
+		/*Abaixo temos um if SIMPLES, ou seja, ele vai avaliar se a condiÃ§Ã£o idade >=12 Ã© verdadeira*/
+		/*Se for verdadeira, o if farÃ¡ um desvio e a linha com a mensagem serÃ¡ executada */
+		if (idade >= 12) {
+			System.out.println("VocÃª pode jogar");
+		}
 		
 		leitor.close();
 
